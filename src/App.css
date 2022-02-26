@@ -1,38 +1,120 @@
+.d-flex {
+  display: flex;
+}
+.error {
+  color: red;
+}
+.red {
+  background-color: red;
+}
+.blue {
+  background-color: rgb(56, 174, 221);
+}
+.yellow {
+  background-color: yellow;
+}
+.green {
+  background-color: green;
+}
 .App {
   text-align: center;
-}
-
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
-}
-
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
+  width: 100vw;
 }
 
 .App-header {
-  background-color: #282c34;
-  min-height: 100vh;
+  background-color: white;
+  min-height: 70px;
+  line-height: 70px;
   display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
+  justify-content: space-between;
+  padding: 0 45px;
+}
+.my_logo {
+  width: 45px;
+  height: 45px;
+  display: flex;
+  margin: auto 0;
+}
+.logo {
+  width: 100%;
+  height: 100%;
+  border-radius: 50%;
+}
+
+/* mail */
+.main {
+  background: linear-gradient(to left, #e66465, #9198e5);
+  height: 100vh;
+  padding-top: 122px;
+}
+.form {
+  margin: 0 auto;
+  text-align: center;
+  width: 453px;
+  min-height: 451px;
+  background: white;
+  border-radius: 16px;
+  padding: 16px 20px;
+}
+.form-title {
+  font-weight: bold;
+  font-size: 24px;
+  line-height: 28px;
+}
+.action {
+  margin-top: 30px;
+  height: 60px;
+  background: #00a3ff;
+  display: flex;
+  border-radius: 5px;
+}
+.form-input {
+  width: 100%;
+  height: 54px;
+  margin: auto 2px;
+  border: none;
+  border-radius: 5px;
+}
+.form-button {
+  background-color: transparent;
+  border: none;
+  color: white;
+  width: 56px;
+  font-weight: 600;
+  font-size: 18px;
+  line-height: 21px;
+  cursor: pointer;
+}
+
+.list-todo {
+  margin-top: 22px;
+  margin-block-start: 0em;
+  margin-block-end: 0em;
+  padding-inline-start: 0px;
+}
+.item-todo {
+  height: 54px;
+  line-height: 54px;
+  margin: 10px 0;
+  padding: 0 14px;
+  border: none;
+  border-radius: 5px;
+  list-style: none;
+  display: flex;
+  justify-content: space-between;
+  cursor: pointer;
+}
+.content {
+  font-weight: 500;
+  font-size: 18px;
   color: white;
 }
 
-.App-link {
-  color: #61dafb;
+.icon {
+  width: 18px;
+  height: 18px;
+  color: white;
 }
-
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
+.icon-update {
+  margin-right: 8px;
 }
