@@ -3,13 +3,14 @@ import { AiFillEdit, AiFillCloseCircle } from "react-icons/ai";
 
 import { StoreContext } from "../App";
 function ListTodo() {
-  const dataTodoList = React.useContext(StoreContext);
-
-  const [record, setRecord] = React.useState("");
+  const [dataTodoList, setdataTodoList] = React.useContext(StoreContext);
 
   const updateItemTodo = () => {};
 
-  const deleteItemTodo = () => {};
+  const deleteItemTodo = (record) => {
+    let temp = dataTodoList.filter((item) => item.content !== record.content);
+    setdataTodoList(temp);
+  };
 
   return (
     <>

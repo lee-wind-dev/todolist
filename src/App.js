@@ -36,7 +36,7 @@ function App() {
         <div className="form">
           <div className="form-title">Todo List</div>
 
-          <StoreContext.Provider value={dataTodoList}>
+          <StoreContext.Provider value={[dataTodoList, setdataTodoList]}>
             <div className="action">
               <input
                 type="text"
