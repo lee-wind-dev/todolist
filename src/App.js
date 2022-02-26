@@ -13,6 +13,7 @@ function App() {
   const [todo, setTodo] = React.useState("");
   const [isError, setIsError] = React.useState(false);
   const [todoColor, setTodoColor] = React.useState("blue");
+  const [isUpdate, setIsUpdate] = React.useState(false);
 
   const addItemTodo = () => {
     if (todo !== "") {
@@ -33,7 +34,7 @@ function App() {
         </div>
       </header>
       <div className="main">
-        <div className="form">
+        <div className={`form ${isUpdate ? "mask" : ""}`}>
           <div className="form-title">Todo List</div>
 
           <StoreContext.Provider value={[dataTodoList, setdataTodoList]}>
@@ -51,7 +52,7 @@ function App() {
               </button>
             </div>
             {isError && <div className="error">Enter something !!!</div>}
-            <ListTodo />
+            <ListTodo isUpdate={isUpdate} setIsUpdate={setIsUpdate} />
           </StoreContext.Provider>
         </div>
       </div>

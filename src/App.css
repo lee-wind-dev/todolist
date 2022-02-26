@@ -55,6 +55,7 @@
   background: white;
   border-radius: 16px;
   padding: 16px 20px;
+  position: relative;
 }
 .form-title {
   font-weight: bold;
@@ -104,6 +105,9 @@
   justify-content: space-between;
   cursor: pointer;
 }
+.item-update {
+  z-index: 10;
+}
 .content {
   font-weight: 500;
   font-size: 18px;
@@ -117,4 +121,35 @@
 }
 .icon-update {
   margin-right: 8px;
+}
+.form-input--update {
+  background-color: transparent;
+  width: 100%;
+  border: none;
+  outline: none;
+  outline-offset: unset;
+}
+.mask {
+}
+.mask::before {
+  content: " ";
+  width: 100px;
+  height: 200px;
+  /* background: rgba(96, 96, 96, 0.76); */
+  background-color: rgba(0, 0, 0, 0.6);
+  cursor: unset;
+  z-index: 2;
+}
+
+.btn-update {
+  height: 32px;
+  line-height: 33px;
+  background: white;
+  display: flex;
+  margin: auto;
+  color: #28acf7;
+  font-weight: 500;
+  font-size: 14px;
+  border-radius: 6px;
+  padding: 0 8px;
 }
